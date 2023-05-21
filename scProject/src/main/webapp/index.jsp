@@ -16,7 +16,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
-        <input type="submit" value="Criar">
+        <input type="submit" value="Create">
     </form>
 
     <h2>Obter Usuário</h2>
@@ -24,7 +24,7 @@
         <label for="id">ID:</label>
         <input type="number" id="id" name="id" required>
         <br>
-        <input type="submit" value="Obter">
+        <input type="submit" value="Login">
     </form>
 </body>
 </html>

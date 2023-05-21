@@ -1,4 +1,4 @@
-package br.com.javaweb.scProject.scProject;
+package br.com.javaweb.scProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

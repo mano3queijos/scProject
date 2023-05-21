@@ -1,0 +1,1 @@
+INSERT INTO crewmate (name, email, password, birthday_date) VALUES('emanuel','emanuel.alemdia@ucsal.edu.br', '12345', '07-10-2004');

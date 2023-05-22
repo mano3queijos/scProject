@@ -1,5 +1,6 @@
 package br.com.javaweb.scProject.entities;
 
+import java.time.LocalDate;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +15,7 @@ public class Crewmate {
 	private String name;
 	private String email;
 	private String password;
-	private String birthdayDate;
+	private LocalDate birthdayDate;
 
 	
 	public Crewmate() {
@@ -22,7 +23,7 @@ public class Crewmate {
 
 	// constructors
 
-	public Crewmate(String name, String email, String password, String birthdayDate) {
+	public Crewmate(String name, String email, String password, LocalDate birthdayDate) {
 		this.name = name;
 		this.email = email;
 		this.password = password;
@@ -61,14 +62,12 @@ public class Crewmate {
 		this.password = password;
 	}
 
-	public String getBirthdayDate() {
+	public LocalDate getBirthdayDate() {
 		return birthdayDate;
 	}
 
-	public void setBirthdayDate(String birthdayDate) {
+	public void setBirthdayDate(LocalDate birthdayDate) {
 		this.birthdayDate = birthdayDate;
 	}
 
-	
-	
 }

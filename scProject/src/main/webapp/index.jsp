@@ -6,10 +6,15 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<link rel="stylesheet"
+	href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet"
+	href="/scProject/src/main/webapp/script/script.js">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 <body>
-	<h1>Teste de Métodos</h1>
 
-	<h2>Criar Usuário</h2>
+	<h2>Create user</h2>
 	<form action="crewmates/create" method="POST">
 		<label for="name">name:</label> <input type="text" id="name"
 			name="name" required> <br> <label for="email">Email:</label>
@@ -19,6 +24,7 @@
 			for="birthdayDate">birthday Date:</label> <input type="date"
 			id="birthdayDate" name="birthdayDate" required> <br> <input
 			type="submit" value="Create">
+	
 	</form>
 
 	<h2>Obter Usuário</h2>
@@ -26,5 +32,7 @@
 		<label for="id">ID:</label> <input type="number" id="id" name="id"
 			required> <br> <input type="submit" value="Login">
 	</form>
+
+	
 </body>
 </html>

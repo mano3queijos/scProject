@@ -1,5 +1,8 @@
 package br.com.javaweb.scProject.controller;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,7 +28,8 @@ public class CrewmateController {
 
 	@PostMapping("/create")
 	public String createCrewmate(@RequestParam("email") String email, @RequestParam("name") String name,
-			@RequestParam("birthdayDate") String birthdayDate, @RequestParam("password") String password) {
+			@RequestParam("birthdayDate") String birthdayDateReceived, @RequestParam("password") String password) {
+		LocalDate birthdayDate = LocalDate.parse(birthdayDateReceived, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 		Crewmate crewmate = new Crewmate(name, email, password, birthdayDate);
 		crewmateRepository.save(crewmate);
 

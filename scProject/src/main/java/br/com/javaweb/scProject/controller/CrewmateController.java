@@ -36,4 +36,4 @@ public class CrewmateController {
 		// Redirecionar para uma página de sucesso ou outra ação necessária
 		return "redirect:/crewmates";
 	}
-}
+} 
